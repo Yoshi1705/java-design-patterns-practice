@@ -1,0 +1,17 @@
+=>We use the Builder Design Pattern when the process of creating an object becomes complex or “scary,” especially when a constructor requires too many fields and becomes hard to manage.
+=>For example, consider building a house. A basic house needs components like walls, door, roof, and windows.
+Later, we may want to extend it by adding optional features like a swimming pool or a garden.
+=>If we try to handle all these required and optional components using one large constructor, the code becomes messy and difficult to understand.
+There are two general approaches:
+Create a parent interface with basic building steps, and have subclasses provide implementations for optional features.
+Create a class with all fields (mandatory + optional), which makes the constructor difficult to use and maintain.
+To solve this problem cleanly, we use the Builder Pattern.
+It separates the object construction logic from the client code, so the client does not need to worry about how the object is created.
+The pattern introduces separate Builder classes that take care of assembling the object step-by-step.
+We then use another class called the Director (not decorator) to define the sequence of steps needed to build the final product.
+This ensures object creation is:
+clean
+flexible
+easy to extend
+readable for the client
+
