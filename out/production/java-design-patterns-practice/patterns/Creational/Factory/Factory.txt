@@ -1,0 +1,4 @@
+the difference between Simple factory and factpry is
+
+simple factory encapsulates the object creation into separate class where as Factory delegates the ovject creation
+to its subclasses
