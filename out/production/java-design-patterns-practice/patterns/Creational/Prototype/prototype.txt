@@ -1,0 +1,13 @@
+Prototype Pattern is a creational design pattern used when object creation is expensive or complex, and we want to create new objects by copying an existing object instead of creating one from scratch.
+
+Instead of using new, we:
+
+Create a prototype object
+
+Clone it
+
+Modify the clone as needed
+
+Key idea:
+
+Create new objects by copying existing ones.

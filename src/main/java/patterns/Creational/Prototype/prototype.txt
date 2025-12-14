@@ -1,0 +1,35 @@
+Prototype Pattern is a creational design pattern used when object creation is expensive or complex, and we want to create new objects by copying an existing object instead of creating one from scratch.
+
+Instead of using new, we:
+
+Create a prototype object
+
+Clone it
+
+Modify the clone as needed
+
+Key idea:
+
+Create new objects by copying existing ones.
+
+✔ Prototype = object that knows how to clone itself
+✔ Registry = stores different prototype objects
+✔ Registry returns clone, not original
+✔ Clone creates a new object with copied state
+If an object has private state, it must own its cloning logic.
+
+That’s why each object creates a clone of itself.
+ection must be cloneable (very important)
+If a field is mutable, you must create a new instance of it while cloning.
+
+Final Mental Checklist for Prototype
+
+When writing clone() always ask:
+
+❓ Is this field mutable?
+
+❓ If yes → create a new object
+
+❓ Does this object itself need cloning?
+
+If you follow this, you’ll never mess up Prototype again.
