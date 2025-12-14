@@ -1,0 +1,12 @@
+Simple Factory is a creational design approach where a single class is responsible for creating objects based on input parameters.
+
+It encapsulates object creation logic in one place.
+
+The client does not use new directly.
+
+Object type is decided using conditions (if–else / switch).
+
+It is not an official GoF design pattern, just a common coding practice.
+
+Purpose:
+To reduce coupling by centralizing object creation and hiding concrete class details from the client.
