@@ -1,0 +1,1 @@
+Abstract Factory defines a common interface for creating multiple related products, and concrete factories implement this interface to produce compatible product families.
